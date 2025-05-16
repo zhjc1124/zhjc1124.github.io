@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4; /* 模拟一个浅色背景，图片中是白色 */
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 400px; /* 限制最大宽度，使其居中或靠左更像截图 */
+        }
+        h1 {
+            font-size: 24px; /* 匹配图片中 "登录" 的大小 */
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            display: inline-block; /* 使标签和输入框在同一行 */
+            margin-bottom: 8px;
+            font-weight: bold;
+            margin-right: 5px;
+            color: #555;
+        }
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* 确保padding和border不增加元素总宽度 */
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            padding: 8px 15px;
+            background-color: #f0f0f0; /* 接近图片中的按钮颜色 */
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #e0e0e0;
+        }
+        .form-group {
+            display: flex; /* 使用flex布局让元素在一行对齐 */
+            align-items: center; /* 垂直居中对齐 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 如果想让内容居中或有一个容器包裹，可以取消下面 .container 的注释 -->
+    <!-- <div class="container"> -->
+        <h1>登录</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="username">用户名：</label>
+                <input type="text" id="username" name="username" value="1221753">
+                <input type="submit" value="登录">
+            </div>
+        </form>
+    <!-- </div> -->
+
+</body>
+</html>
