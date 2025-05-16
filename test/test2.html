@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #fff; /* 图片背景是白色 */
+            color: #333;
+        }
+        .container {
+            max-width: 600px; /* 限制内容区域宽度 */
+        }
+        h1 {
+            font-size: 28px; /* 调整欢迎语字体大小 */
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .add-product-form {
+            margin-bottom: 30px;
+            display: flex; /* 让标签、输入框和按钮在同一行 */
+            align-items: center; /* 垂直居中对齐 */
+        }
+        .add-product-form label {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        .add-product-form input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+            font-size: 16px;
+            width: 200px; /* 给输入框一个合适的宽度 */
+        }
+        .add-product-form input[type="submit"],
+        .add-product-form button {
+            padding: 8px 15px;
+            background-color: #f0f0f0;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .add-product-form input[type="submit"]:hover,
+        .add-product-form button:hover {
+            background-color: #e0e0e0;
+        }
+        .cart-items h2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .cart-items ul {
+            list-style-type: disc; /* 使用实心圆点 */
+            padding-left: 20px; /* 给列表一些左内边距 */
+            margin-bottom: 30px;
+        }
+        .cart-items li {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .view-cart-link a {
+            font-size: 16px;
+            color: #600080; /* 图片中链接是紫色 */
+            text-decoration: underline;
+        }
+        .view-cart-link a:hover {
+            color: #400055;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎, 1221753!</h1>
+
+        <form action="#" method="post" class="add-product-form">
+            <label for="productName">添加商品：</label>
+            <input type="text" id="productName" name="productName">
+            <input type="submit" value="添加到购物车">
+            <!-- 或者使用 button 标签 -->
+            <!-- <button type="submit">添加到购物车</button> -->
+        </form>
+
+        <div class="cart-items">
+            <h2>当前购物车商品：</h2>
+            <ul>
+                <li>小米su7</li>
+                <li>oppo Find X8</li>
+            </ul>
+        </div>
+
+        <div class="view-cart-link">
+            <a href="#">查看购物车</a>
+        </div>
+    </div>
+</body>
+</html>
